@@ -1,0 +1,29 @@
+<h1>Create New User</h1>
+<%= form_for @user do |i| %>
+  <%= i.label :first_name %>
+  <%= i.text_field :first_name %>
+
+  <%= i.label :last_name %>
+  <%= i.text_field :last_name %>
+
+  <%= i.label :age %>
+  <%= i.integer_field :age %>
+
+  <%= i.label :hair_color %>
+  <%= i.text_field :hair_color %>
+
+  <%= i.label :eye_color %>
+  <%= i.text_field :eye_color %>
+
+  <%= i.label :gender %>
+  <%= i.radio_button :gender, 'Male' %>
+  <%= i.radio_button :gender, 'Female' %>
+
+  <%= i.label :alive %>
+  <%= i.radio_buttion :alive, 'Living' %>
+  <%= i.radio_buttion :alive, 'Deceased' %>
+
+  <%= i.submit %>
+
+<% end %>
+
